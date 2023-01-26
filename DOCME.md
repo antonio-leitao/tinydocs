@@ -1,4 +1,18 @@
-<h1 id="example.submodule.classes_and_funcs">classes_and_funcs</h1>
+# Table of Contents 
+    - [Submodule](#example.submodule)
+        - [Classes and funcs](#example.submodule.classes_and_funcs)
+            - [UMAP](#example.submodule.classes_and_funcs.UMAP)
+            - [UMAP_foo](#example.submodule.classes_and_funcs.UMAP_foo)
+        - [Bigclass](#example.submodule.bigclass)
+            - [BigClass](#example.submodule.bigclass.BigClass)
+    - [Utils module](#example.utils_module)
+        - [bar](#example.utils_module.bar)
+        - [foo](#example.utils_module.foo)
+    - [Module many classes](#example.module_many_classes)
+        - [DBScan](#example.module_many_classes.DBScan)
+        - [KMeans](#example.module_many_classes.KMeans)
+
+<h1 id="example.submodule.classes_and_funcs">Classes and funcs</h1>
 Docstring for the example.py module.
 
 Modules names should have short, all-lowercase names.  The module name may
@@ -130,7 +144,7 @@ use the function.
 a
 b
 ```
-<h1 id="example.submodule.bigclass">bigclass</h1>
+<h1 id="example.submodule.bigclass">Bigclass</h1>
 Docstring for the example.py module.
 
 Modules names should have short, all-lowercase names.  The module name may
@@ -215,7 +229,7 @@ use the function.
 a
 b
 ```
-<h1 id="example.utils_module">utils_module</h1>
+<h1 id="example.utils_module">Utils module</h1>
 Docstring for the example.py module.
 
 Modules names should have short, all-lowercase names.  The module name may
@@ -301,7 +315,7 @@ use the function.
 a
 b
 ```
-<h1 id="example.module_many_classes">module_many_classes</h1>
+<h1 id="example.module_many_classes">Module many classes</h1>
 Docstring for the example.py module.
 
 Modules names should have short, all-lowercase names.  The module name may

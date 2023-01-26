@@ -66,6 +66,12 @@ def _isclass(object):
     return inspect.isclass(object) and not isinstance(object, types.GenericAlias)
 
 
+def _clean_name(path: str) -> str:
+    mod_name = os.path.split(path)[-1].removesuffix(".py")
+    mod_name = mod_name.replace("_", " ")
+    return mod_name.capitalize()
+
+
 def _importfile(path):
     """Import a Python source file or compiled file given its path."""
     magic = importlib.util.MAGIC_NUMBER
@@ -107,7 +113,7 @@ def process_dir(
                 continue
             if dirname.startswith("_"):
                 continue
-            data[breadcrumbs] = dirname
+            data[breadcrumbs] = _clean_name(dirname)
             process_dir(path, modules, data, excluded_dirs, excluded_files)
 
         elif os.path.isfile(path):
@@ -122,13 +128,14 @@ def process_dir(
 
 def process_module(path: str, data: dict, breadcrumbs: str) -> str:
     module = _importfile(path)
-    data[breadcrumbs] = path
+    data[breadcrumbs] = _clean_name(module.__name__)
 
     # iterate through classes
     classes = []
     for name, node in inspect.getmembers(module, _isclass):
         crumbs = breadcrumbs + "." + name
         classes.append(process_class(name, crumbs, node))
+        data[crumbs] = name
 
     # iterate throough functions
     routines = []
@@ -137,10 +144,11 @@ def process_module(path: str, data: dict, breadcrumbs: str) -> str:
             continue
         crumbs = breadcrumbs + "." + name
         routines.append(process_routine(name, crumbs, node))
+        data[crumbs] = name
 
     mod = Module(
         id=breadcrumbs,
-        name=module.__name__,
+        name=_clean_name(module.__name__),
         doc=module.__doc__,
         routines=routines,
         classes=classes,
@@ -315,11 +323,20 @@ def module_docstring(module: Module) -> str:
 
 
 def write_docme(package: Package, path: str = "DOCME.md") -> None:
-    docs = ""
+
+    docs = create_toc(package.data)
     for module in package.modules:
         docs += module_docstring(module)
     with open(path, "w") as file:
         file.write(docs)
+
+
+def create_toc(dictionary):
+    toc = "# Table of Contents \n"
+    for key, value in dictionary.items():
+        depth = key.count(".")
+        toc += f"{'    ' * (depth-1)}- [{value}](#{key})\n"
+    return toc + "\n"
 
 
 def main(
