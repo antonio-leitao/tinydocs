@@ -73,17 +73,17 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 &nbsp;&nbsp;&nbsp;**Methods:**
 <details closed>
-  <summary>&nbsp;&nbsp;&nbsp;<code>Fit_transform</code></summary>
+  <summary><code>Fit_transform</code></summary>
   This tell you the number of points, it should be something cool but I dont really rememeber
  
 ```python
 dbsampler.DBS(X=X,y=y,n_points=1000,n_epochs=5, distribution='uniform', metric='euclidean')
 ```
-
 </details>
 
+
 <details closed>
-  <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>n_parameters</code></summary>
+  <summary>&nbsp;&nbsp;&nbsp;<code>n_parameters</code></summary>
   This tell you the number of points, it should be something cool but I dont really rememeber
  
 ```python
@@ -131,7 +131,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
  
 <details closed>
   <summary>&emsp;<b>Returns</b></summary>
-  <ul>
+  &nbsp;&nbsp;&nbsp;<ul>
     <li><cover>n_parameters</code>: numpy array (n_points, n_features) of points in the decision boundary.</li>
   </ul>
 </details>
