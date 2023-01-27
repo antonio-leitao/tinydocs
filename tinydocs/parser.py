@@ -67,6 +67,8 @@ def process_dir(
         if os.path.isdir(path):
             if dirname in excluded_dirs:
                 continue
+            if dirname.startswith("."):
+                continue
             if dirname.startswith("_"):
                 continue
             data[breadcrumbs] = _clean_name(dirname)

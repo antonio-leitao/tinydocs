@@ -39,7 +39,7 @@ def summary_doc(summary: list) -> str:
     entire_summary = "\n".join(summary)
     summary = re.sub(r"[\[](\d+)[\]]_", match_callback, entire_summary)
 
-    return summary
+    return summary + "\n"
 
 
 def signature_doc(identifier: str, signature: str) -> str:
@@ -174,6 +174,6 @@ def module_docstring(module: Module) -> str:
 def create_toc(dictionary):
     toc = "# Table of Contents \n\n"
     for key, value in dictionary.items():
-        depth = key.count(".")
-        toc += f"{'  ' * (depth-1)}- [{value}](#{key})\n"
+        depth = key.lstrip(".").count(".")
+        toc += f"{'  ' * depth}- [{value}](#{key})\n"
     return toc + "\n"

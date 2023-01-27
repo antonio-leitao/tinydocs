@@ -16,7 +16,7 @@ class BigClass:
 
     Several sentences providing an extended description. Refer to
     variables using back-ticks, e.g. `var`. You can also add references here like [1]_.
-    Or even in the seciont "Notes" below [2_]. Dont forget to add the link[2]_ in the section "References otherwise it wont work".
+    Or even in the seciont "Notes" below [2]_. Dont forget to add the link[2]_ in the section "References otherwise it wont work".
 
     Parameters
     ----------

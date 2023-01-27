@@ -1,6 +1,15 @@
 from numpydoc.docscrape import FunctionDoc, ClassDoc
 from dataclasses import dataclass
 
+
+@dataclass
+class TDSConfig:
+    directory: str
+    output: str
+    excluded_dirs: list
+    excluded_files: list
+
+
 @dataclass
 class Routine:
     id: str

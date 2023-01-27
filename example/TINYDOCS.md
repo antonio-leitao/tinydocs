@@ -1,11 +1,11 @@
 # Table of Contents 
 
-- [Subfolder](#examples.subfolder)
-  - [Module with class](#examples.subfolder.module_with_class)
-    - [BigClass](#examples.subfolder.module_with_class.BigClass)
-- [Module with functions](#examples.module_with_functions)
-  - [better_function](#examples.module_with_functions.better_function)
-  - [deprecated_function](#examples.module_with_functions.deprecated_function)
+  - [Subfolder](#examples.subfolder)
+    - [Module with class](#examples.subfolder.module_with_class)
+      - [BigClass](#examples.subfolder.module_with_class.BigClass)
+  - [Module with functions](#examples.module_with_functions)
+    - [better_function](#examples.module_with_functions.better_function)
+    - [deprecated_function](#examples.module_with_functions.deprecated_function)
 
 <h1 align="center" id="examples.subfolder.module_with_class">Module with class</h1>
 Docstring for the module `module_with_class.py`.
@@ -28,12 +28,13 @@ examples.subfolder.module_with_class.BigClass()
 Summarize the class in one line.
 Several sentences providing an extended description. Refer to
 variables using back-ticks, e.g. `var`. You can also add references here like [^1].
-Or even in the seciont "Notes" below [2_]. Dont forget to add the link[^2] in the section "References otherwise it wont work".
-Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [^3]. This can include multiple paragraphs and even some math:
+Or even in the seciont "Notes" below [^2]. Dont forget to add the link[^3] in the section "References otherwise it wont work".
+Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [^4]. This can include multiple paragraphs and even some math:
 
 $$X(e^{j\omega } ) = x(n)e^{ - j\omega n}$$
 
-Math can be also inline: like $\omega$. Although you can put references in the Summary and Notes, you can only put am,th in this section.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>data</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+Math can be also inline: like $\omega$. Although you can put references in the Summary and Notes, you can only put am,th in this section.
+<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>data</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>n_clusters</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
@@ -49,7 +50,8 @@ section.</li></ul></details><details closed><summary>&emsp;<b>Returns</b></summa
 
 Summarize the function in one line.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>X</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+variables using back-ticks, e.g. `var`.
+<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>X</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>y</code>: int, optional<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
@@ -75,7 +77,8 @@ b
 
 Summarize the function in one line.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>X</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+variables using back-ticks, e.g. `var`.
+<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>X</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>*args</code>: iterable<br>&emsp;Other arguments.</li></ul></details><details closed><summary>&emsp;<b>Returns</b></summary><p/><ul><li><code>Y</code>: numpy_array<br>&emsp;Numpy array with all the with the transformed values of the input</li></ul></details>
 
@@ -131,7 +134,8 @@ examples.module_with_functions.better_function(var1, var2, long_var_name=None, *
 
 This function is much better than the one that is deprecated.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+variables using back-ticks, e.g. `var`.
+<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>var2</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
@@ -158,9 +162,10 @@ examples.module_with_functions.deprecated_function(var1, var2, long_var_name=Non
 This function is deprecated.
 Several sentences providing an extended description. Refer to
 variables using back-ticks, e.g. `var`.
-Look at this really big equation that I took from [^4]
+Look at this really big equation that I took from [^5]
 
-$$( \sum_{k=1}^n a_k b_k )^2 \leq ( \sum_{k=1}^n a_k^2 ) ( \sum_{k=1}^n b_k^2 )$$<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+$$( \sum_{k=1}^n a_k b_k )^2 \leq ( \sum_{k=1}^n a_k^2 ) ( \sum_{k=1}^n b_k^2 )$$
+<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>var2</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
