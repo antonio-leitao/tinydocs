@@ -1,12 +1,12 @@
 [project]
 name = "tinydocs"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="António Leitão", email="aleitao@novaims.unl.pt" },
 ]
 description = "Lightweight autodoc for github readme"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -20,7 +20,7 @@ dependencies = [
 "Homepage" = "https://github.com/antonio-leitao/docme"
 
 [project.scripts]
-jet = "tinydocs.main:main"
+tinydocs = "tinydocs.main:main"
 
 [tool.setuptools]
 packages = ["tinydocs"]
