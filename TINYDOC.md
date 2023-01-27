@@ -7,7 +7,7 @@
   - [better_function](#examples.module_with_functions.better_function)
   - [deprecated_function](#examples.module_with_functions.deprecated_function)
 
-<h1 aling="center" id="examples.subfolder.module_with_class">Module with class</h1>
+<h1 align="center" id="examples.subfolder.module_with_class">Module with class</h1>
 <p align="center">Docstring for the module `module_with_class.py`.
 
 Modules names should have short, all-lowercase names.  The module name may
@@ -122,7 +122,7 @@ b
    modelling of the Highland Haggis using object-oriented, fuzzy-logic
    and neural-network techniques," Computers & Geosciences, vol. 22,
    pp. 585-588, 1996.
-<h1 aling="center" id="examples.module_with_functions">Module with functions</h1>
+<h1 align="center" id="examples.module_with_functions">Module with functions</h1>
 <p align="center">Docstring for the module `module_with_functions.py`.
 
 This module as an example functions with some warnings and deprecations examples.
