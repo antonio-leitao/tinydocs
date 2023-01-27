@@ -161,7 +161,9 @@ def class_docstring(obj: ClassObj) -> str:
 
 
 def module_docstring(module: Module) -> str:
-    docstring = f'<h1 align="center" id="{module.id}">{module.name}</h1>\n<p align="center">{module.doc}</p>\n'
+    docstring = (
+        f'<h1 align="center" id="{module.id}">{module.name}</h1>\n{module.doc}\n'
+    )
     for obj in module.classes:
         docstring += class_docstring(obj)
     for routine in module.routines:

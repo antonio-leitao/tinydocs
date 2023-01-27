@@ -14,7 +14,7 @@ def write_docme(package: Package, path: str = "DOCME.md") -> None:
 
 def main(
     directory: str = "examples",
-    output: str = "TINYDOC.md",
+    output: str = "TINYDOCS.md",
     excluded_dirs: list = [],
     excluded_files: list = [],
 ) -> None:

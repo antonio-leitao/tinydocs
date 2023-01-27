@@ -8,7 +8,7 @@
   - [deprecated_function](#examples.module_with_functions.deprecated_function)
 
 <h1 align="center" id="examples.subfolder.module_with_class">Module with class</h1>
-<p align="center">Docstring for the module `module_with_class.py`.
+Docstring for the module `module_with_class.py`.
 
 Modules names should have short, all-lowercase names.  The module name may
 have underscores if this improves readability.
@@ -18,7 +18,7 @@ module's docstring may extend over multiple lines.  If your docstring does
 extend over multiple lines, the closing three quotation marks must be on
 a line by itself, preferably preceded by a blank line.
 
-</p>
+
 <h2 id="examples.subfolder.module_with_class.BigClass">BigClass</h2>
 
 ```python
@@ -27,17 +27,13 @@ examples.subfolder.module_with_class.BigClass()
 
 Summarize the class in one line.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`. [^1].
-Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [^2].  You may also cite these
-references in the notes section above.
-
-This can have multiple paragraphs.
-
-You may include some math:
+variables using back-ticks, e.g. `var`. You can also add references here like [^1].
+Or even in the seciont "Notes" below [2_]. Dont forget to add the link[^2] in the section "References otherwise it wont work".
+Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [^3]. This can include multiple paragraphs and even some math:
 
 $$X(e^{j\omega } ) = x(n)e^{ - j\omega n}$$
 
-And even use a Greek symbol like $\omega$ inline.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>data</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+Math can be also inline: like $\omega$. Although you can put references in the Summary and Notes, you can only put am,th in this section.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>data</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>n_clusters</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
@@ -111,24 +107,16 @@ b
    and neural-network techniques," Computers & Geosciences, vol. 22,
    pp. 585-588, 1996.
 
-[^2]: O. McNoleg, "The integration of GIS, remote sensing,
-   expert systems and adaptive co-kriging for environmental habitat
-   modelling of the Highland Haggis using object-oriented, fuzzy-logic
-   and neural-network techniques," Computers & Geosciences, vol. 22,
-   pp. 585-588, 1996.
+[^2]: This is another footnote talking about footnotes. Very nice.
 
-[^3]: O. McNoleg, "The integration of GIS, remote sensing,
-   expert systems and adaptive co-kriging for environmental habitat
-   modelling of the Highland Haggis using object-oriented, fuzzy-logic
-   and neural-network techniques," Computers & Geosciences, vol. 22,
-   pp. 585-588, 1996.
+[^3]: Another one even, this is great actually. The system is not perfect yet but it will get there.
 <h1 align="center" id="examples.module_with_functions">Module with functions</h1>
-<p align="center">Docstring for the module `module_with_functions.py`.
+Docstring for the module `module_with_functions.py`.
 
 This module as an example functions with some warnings and deprecations examples.
 It is not much different than the other module but its put here for completeness and for adding content to the TOC.
 
-</p>
+
 <h2 id="examples.module_with_functions.better_function">better_function</h2>
 
 ```python

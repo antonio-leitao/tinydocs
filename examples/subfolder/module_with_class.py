@@ -15,7 +15,8 @@ class BigClass:
     r"""Summarize the class in one line.
 
     Several sentences providing an extended description. Refer to
-    variables using back-ticks, e.g. `var`. [1]_.
+    variables using back-ticks, e.g. `var`. You can also add references here like [1]_.
+    Or even in the seciont "Notes" below [2_]. Dont forget to add the link[2]_ in the section "References otherwise it wont work".
 
     Parameters
     ----------
@@ -57,16 +58,11 @@ class BigClass:
 
     Notes
     -----
-    Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [2]_.  You may also cite these
-    references in the notes section above.
-
-    This can have multiple paragraphs.
-
-    You may include some math:
+    Notes about the implementation algorithm (if needed). Cite the relevant literature, e.g. [2]_. This can include multiple paragraphs and even some math:
 
     $$X(e^{j\omega } ) = x(n)e^{ - j\omega n}$$
 
-    And even use a Greek symbol like $\omega$ inline.
+    Math can be also inline: like $\omega$. Although you can put references in the Summary and Notes, you can only put am,th in this section.
 
     References
     ----------
@@ -76,17 +72,9 @@ class BigClass:
        and neural-network techniques," Computers & Geosciences, vol. 22,
        pp. 585-588, 1996.
 
-    .. [2] O. McNoleg, "The integration of GIS, remote sensing,
-       expert systems and adaptive co-kriging for environmental habitat
-       modelling of the Highland Haggis using object-oriented, fuzzy-logic
-       and neural-network techniques," Computers & Geosciences, vol. 22,
-       pp. 585-588, 1996.
+    .. [2] This is another footnote talking about footnotes. Very nice.
 
-    .. [3] O. McNoleg, "The integration of GIS, remote sensing,
-       expert systems and adaptive co-kriging for environmental habitat
-       modelling of the Highland Haggis using object-oriented, fuzzy-logic
-       and neural-network techniques," Computers & Geosciences, vol. 22,
-       pp. 585-588, 1996.
+    .. [3] Another one even, this is great actually. The system is not perfect yet but it will get there.
 
     """
 
