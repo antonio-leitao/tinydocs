@@ -49,5 +49,5 @@ class Module:
 
 @dataclass
 class Package:
-    modules: list[Module] | None
+    modules: list[Module]
     data: dict

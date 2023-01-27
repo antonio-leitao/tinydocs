@@ -8,13 +8,13 @@ import textwrap
 import argparse
 import importlib.metadata
 
-# serlf
-from transformer import create_toc, module_docstring
-from parser import iterate_python_files
-from classes import Package, TDSConfig
+# self
+from tinydocs.transformer import create_toc, module_docstring
+from tinydocs.parser import iterate_python_files
+from tinydocs.classes import Package, TDSConfig
 
 
-# __version__ = importlib.metadata.version("tinydocs")
+__version__ = importlib.metadata.version("tinydocs")
 
 
 def write_docme(package: Package, path: str = "DOCME.md") -> None:
@@ -34,8 +34,7 @@ def make_parser():
     parser.add_argument(
         "--version",
         action="version",
-        # version="%(prog)s {version}".format(version=__version__),
-        version="0.0.1",
+        version="%(prog)s {version}".format(version=__version__),
     )
     parser.add_argument(
         "-d",

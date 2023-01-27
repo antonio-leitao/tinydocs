@@ -1,9 +1,12 @@
-from classes import FunctionDoc, ClassDoc, Routine, ClassObj, Module, Package
+# standard
 import importlib
 import inspect
 import types
 import sys
 import os
+
+# self
+from tinydocs.classes import FunctionDoc, ClassDoc, Routine, ClassObj, Module
 
 
 class ErrorDuringImport(Exception):

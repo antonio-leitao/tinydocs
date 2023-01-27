@@ -62,7 +62,7 @@ release:
 	$(MAKE) changelog;\
 	git tag -a $$NEW -m "Release";\
 	git push origin master --tags;\
-	gh release create $$NEW -F CHANGELOG.md --title "Jet v$$NEW";\
+	gh release create $$NEW -F CHANGELOG.md --title "Tinydocs v$$NEW";\
 	twine upload dist/*;\
 	rm CHANGELOG.md
 

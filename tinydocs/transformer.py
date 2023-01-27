@@ -1,7 +1,11 @@
-from classes import Module, Routine, ClassObj
-from itertools import groupby
+# standard
 import os
 import re
+from itertools import groupby
+
+# self
+from tinydocs.classes import Module, Routine, ClassObj
+
 
 NOTECOUNT = 0
 REFCOUNT = 0
