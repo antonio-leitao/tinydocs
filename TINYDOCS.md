@@ -157,10 +157,10 @@ examples.module_with_functions.deprecated_function(var1, var2, long_var_name=Non
 
 This function is deprecated.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`. 
+variables using back-ticks, e.g. `var`.
 Look at this really big equation that I took from [^4]
 
-$$\left( \sum_{k=1}^n a_k b_k ight)^2 \leq \left( \sum_{k=1}^n a_k^2 ight) \left( \sum_{k=1}^n b_k^2 ight)$$<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 ight)$$<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>var2</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more

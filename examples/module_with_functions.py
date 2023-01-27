@@ -10,7 +10,7 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
     """This function is deprecated.
 
     Several sentences providing an extended description. Refer to
-    variables using back-ticks, e.g. `var`. 
+    variables using back-ticks, e.g. `var`.
 
     Parameters
     ----------
@@ -36,7 +36,7 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
     -----
     Look at this really big equation that I took from [1]_
 
-    $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+    $$\left( \sum_{k=1}^n a_k b_k \\right)^2 \leq \left( \sum_{k=1}^n a_k^2 \\right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
     Warnings
     --------
