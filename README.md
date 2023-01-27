@@ -140,7 +140,7 @@ def function(var1, var2, long_var_name=None, *args):
 tinydocs <options>
 ```
 
-> **Note** By design `--tinydocs` only looks at `.py` files and skips over hidden directories or files/functions/methods that start with "\_"(underscore).
+> **Note** By design `--tinydocs` only looks at `.py` files and skips over hidden directories adn will ignore any opbject (files, functions or methods) that start with `_`(underscore).
 
 - `--dir`: Directory to document. Defaults to working directory.
 - `--output`: Output path and name of documentation file. Defaults to `--dir/TINYDOCS.md` when not supplied.
