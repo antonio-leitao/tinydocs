@@ -332,10 +332,10 @@ def write_docme(package: Package, path: str = "DOCME.md") -> None:
 
 
 def create_toc(dictionary):
-    toc = "# Table of Contents \n"
+    toc = "# Table of Contents \n\n"
     for key, value in dictionary.items():
         depth = key.count(".")
-        toc += f"{'    ' * (depth-1)}- [{value}](#{key})\n"
+        toc += f"{'  ' * (depth-1)}- [{value}](#{key})\n"
     return toc + "\n"
 
 
