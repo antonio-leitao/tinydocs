@@ -7,8 +7,8 @@
   - [better_function](#examples.module_with_functions.better_function)
   - [deprecated_function](#examples.module_with_functions.deprecated_function)
 
-<h1 id="examples.subfolder.module_with_class">Module with class</h1>
-Docstring for the module `module_with_class.py`.
+<h1 aling="center" id="examples.subfolder.module_with_class">Module with class</h1>
+<p align="center">Docstring for the module `module_with_class.py`.
 
 Modules names should have short, all-lowercase names.  The module name may
 have underscores if this improves readability.
@@ -18,7 +18,7 @@ module's docstring may extend over multiple lines.  If your docstring does
 extend over multiple lines, the closing three quotation marks must be on
 a line by itself, preferably preceded by a blank line.
 
-
+</p>
 <h2 id="examples.subfolder.module_with_class.BigClass">BigClass</h2>
 
 ```python
@@ -122,13 +122,13 @@ b
    modelling of the Highland Haggis using object-oriented, fuzzy-logic
    and neural-network techniques," Computers & Geosciences, vol. 22,
    pp. 585-588, 1996.
-<h1 id="examples.module_with_functions">Module with functions</h1>
-Docstring for the module `module_with_functions.py`.
+<h1 aling="center" id="examples.module_with_functions">Module with functions</h1>
+<p align="center">Docstring for the module `module_with_functions.py`.
 
 This module as an example functions with some warnings and deprecations examples.
 It is not much different than the other module but its put here for completeness and for adding content to the TOC.
 
-
+</p>
 <h2 id="examples.module_with_functions.better_function">better_function</h2>
 
 ```python
@@ -165,7 +165,7 @@ examples.module_with_functions.deprecated_function(var1, var2, long_var_name=Non
 
 
 
-> **Warning** Deprecation Warnign: `deprecated_function` will be removed in version 2.0.0, it is replaced by `better_function` because the new one is blazingly fast.
+> **Warning** Deprecation Warning: `deprecated_function` will be removed in version 2.0.0, it is replaced by `better_function` because the new one is blazingly fast.
 
 This function is deprecated.
 Several sentences providing an extended description. Refer to
@@ -193,9 +193,6 @@ use the function.
 [4,5,6]
 ```
 
-
-Cite the relevant literature, e.g. [1]_.  You may also cite these
-references in the notes section above.
 
 [^4]: O. McNoleg, "The integration of GIS, remote sensing,
    expert systems and adaptive co-kriging for environmental habitat

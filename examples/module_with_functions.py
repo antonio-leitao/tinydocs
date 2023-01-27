@@ -46,13 +46,10 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
 
     Warnings
     --------
-    Deprecation Warnign: `deprecated_function` will be removed in version 2.0.0, it is replaced by `better_function` because the new one is blazingly fast.
+    Deprecation Warning: `deprecated_function` will be removed in version 2.0.0, it is replaced by `better_function` because the new one is blazingly fast.
 
     References
     ----------
-    Cite the relevant literature, e.g. [1]_.  You may also cite these
-    references in the notes section above.
-
     .. [1] O. McNoleg, "The integration of GIS, remote sensing,
        expert systems and adaptive co-kriging for environmental habitat
        modelling of the Highland Haggis using object-oriented, fuzzy-logic
