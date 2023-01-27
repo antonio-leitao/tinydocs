@@ -1,5 +1,6 @@
 from classes import Module, Routine, ClassObj
 from itertools import groupby
+import os
 import re
 
 NOTECOUNT = 0
@@ -115,7 +116,7 @@ def method_docstring(
     if method.returns:
         docs += collapsable_doc("Returns", parameter_list(method.returns))
     if method.examples:
-        docs += examples_doc(method.examples)
+        docs += collapsable_doc("Examples", examples_doc(method.examples))
     if method.references:
         docs += references_doc(method.references)
     return docs
@@ -132,7 +133,7 @@ def routine_docstring(routine: Routine) -> str:
     if routine.returns:
         docs += collapsable_doc("Returns", parameter_list(routine.returns))
     if routine.examples:
-        docs += examples_doc(routine.examples)
+        docs += collapsable_doc("Examples", examples_doc(routine.examples))
     if routine.references:
         docs += references_doc(routine.references)
     return docs
@@ -153,7 +154,7 @@ def class_docstring(obj: ClassObj) -> str:
     if obj.methods:
         docs += collapsable_doc("Methods", format_methods(obj.methods))
     if obj.examples:
-        docs += examples_doc(obj.examples)
+        docs += collapsable_doc("Examples", examples_doc(obj.examples))
     if obj.references:
         docs += references_doc(obj.references)
 
@@ -171,9 +172,11 @@ def module_docstring(module: Module) -> str:
     return docstring
 
 
-def create_toc(dictionary):
+def create_toc(dictionary: dict) -> str:
+    common_prefix = os.path.commonprefix([key for key in dictionary.keys()])
     toc = "# Table of Contents \n\n"
     for key, value in dictionary.items():
-        depth = key.lstrip(".").count(".")
+        # depth = key.lstrip(".").count(".")
+        depth = key.replace(common_prefix, "").count(".")
         toc += f"{'  ' * depth}- [{value}](#{key})\n"
     return toc + "\n"
