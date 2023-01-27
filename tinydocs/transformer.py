@@ -123,7 +123,7 @@ def method_docstring(
 
 
 def routine_docstring(routine: Routine) -> str:
-    docs = f'<h2 id="{routine.id}">{routine.name}</h2>\n'
+    docs = f'<h3 id="{routine.id}">{routine.name}</h3>\n'
     docs += signature_doc(routine.id, routine.signature)
     if routine.warnings:
         docs += warnings_doc(routine.warnings)
@@ -140,7 +140,7 @@ def routine_docstring(routine: Routine) -> str:
 
 
 def class_docstring(obj: ClassObj) -> str:
-    docs = f'<h2 id="{obj.id}">{obj.name}</h2>\n'
+    docs = f'<h3 id="{obj.id}">{obj.name}</h3>\n'
     docs += signature_doc(obj.id, obj.signature)
     if obj.warnings:
         docs += warnings_doc(obj.warnings)
@@ -162,9 +162,7 @@ def class_docstring(obj: ClassObj) -> str:
 
 
 def module_docstring(module: Module) -> str:
-    docstring = (
-        f'<h1 align="center" id="{module.id}">{module.name}</h1>\n{module.doc}\n'
-    )
+    docstring = f'<h1 id="{module.id}">{module.name}</h1>\n{module.doc}\n'
     for obj in module.classes:
         docstring += class_docstring(obj)
     for routine in module.routines:

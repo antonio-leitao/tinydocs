@@ -7,14 +7,15 @@ Are you in need of a simple and efficient solution for documenting your Python c
 
 <h3 align="center">Tinydocs is right for you!</h3>
 
-`readthedocs` automatically generates the documentation of your `.py` files in a small elegant way that fits in a simple `README.md`. Check out below an example function or the [example directory.](#sda)
+`readthedocs` automatically generates the documentation of your `.py` files in a small elegant way that fits in a simple `README.md`. Check out the example function below or the [example directory.](#https://github.com/antonio-leitao/tinydocs/tree/master/example)
 
 #### Contents
 
 - [Installation](#installation)
-- [Example](#running-tests)
-- [Syntax](#mastering-verbosity)
-- [Github Workflow](#reading-reports)
+- [Example](#example)
+- [Syntax](#syntax)
+- [Basic Usage](#basic_usage)
+- [Github Workflow](#github-workflow)
 
 # Installation
 
@@ -26,7 +27,7 @@ pip install tinydocs
 
 # Example
 
-The following is an example of the documentation egenrated for a simple function. YOu can finde how `tinydocs` handles and entire directory by checking the [example directory](#somelink).
+The following is an example of the documentation egenrated for a simple function. YOu can finde how `tinydocs` handles and entire directory by checking the [example directory](#https://github.com/antonio-leitao/tinydocs/tree/master/example).
 
 ## Function
 
@@ -65,9 +66,9 @@ use the function.
 
 # Syntax
 
-Currently `tinydocs` only supports [NumpyDoc](#sda) syntax. This might change in the future. For a detailed guide check out numpy's style guidelines you can also check-out the [example directory](#cfsa) of this project.
+Currently `tinydocs` only supports [NumpyDoc](#https://numpydoc.readthedocs.io/en/latest/format.html) syntax. This might change in the future. For a detailed guide check out numpy's style guidelines you can also check-out the [example directory](#https://github.com/antonio-leitao/tinydocs/tree/master/example) of this project.
 
-Here is the docstring that generates the documentation on the example above, taken mostly from [numpydoc's example](#djsla).
+Here is the docstring that generates the documentation on the example above, taken mostly from [numpydoc's example](#https://numpydoc.readthedocs.io/en/latest/example.html#example).
 
 ```python
 def function(var1, var2, long_var_name=None, *args):
@@ -122,6 +123,22 @@ def function(var1, var2, long_var_name=None, *args):
     """
     pass
 ```
+
+# Basic Usage
+
+`tinydocs` can be run directly from the command line using:
+
+```sh
+tinydocs <options>
+```
+
+> **Note** By design `--tinydocs` only looks at `.py` files and skips over hidden directories or files/functions/methods that start with "\_"(underscore).
+
+- `--dir`: Directory to document. Defaults to working directory.
+- `--output`: Output path and name of documentation file. Defaults to `--dir/TINYDOCS.md` when not supplied.
+- `--exclude-dirs`: List of directories to exclude entirely from the documentation.
+- `--exclude-files`: List of files to exclude individually from the documentation.
+- `--help`: Help will always be given to those who ask for it.
 
 # Github Workflow
 

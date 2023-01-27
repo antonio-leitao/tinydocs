@@ -7,7 +7,7 @@
   - [better_function](#example.module_with_functions.better_function)
   - [deprecated_function](#example.module_with_functions.deprecated_function)
 
-<h1 align="center" id="example.subfolder.module_with_class">Module with class</h1>
+<h1 id="example.subfolder.module_with_class">Module with class</h1>
 Docstring for the module `module_with_class.py`.
 
 Modules names should have short, all-lowercase names.  The module name may
@@ -19,7 +19,7 @@ extend over multiple lines, the closing three quotation marks must be on
 a line by itself, preferably preceded by a blank line.
 
 
-<h2 id="example.subfolder.module_with_class.BigClass">BigClass</h2>
+<h3 id="example.subfolder.module_with_class.BigClass">BigClass</h3>
 
 ```python
 example.subfolder.module_with_class.BigClass()
@@ -113,14 +113,14 @@ b
 [^2]: This is another footnote talking about footnotes. Very nice.
 
 [^3]: Another one even, this is great actually. The system is not perfect yet but it will get there.
-<h1 align="center" id="example.module_with_functions">Module with functions</h1>
+<h1 id="example.module_with_functions">Module with functions</h1>
 Docstring for the module `module_with_functions.py`.
 
 This module as an example functions with some warnings and deprecations examples.
 It is not much different than the other module but its put here for completeness and for adding content to the TOC.
 
 
-<h2 id="example.module_with_functions.better_function">better_function</h2>
+<h3 id="example.module_with_functions.better_function">better_function</h3>
 
 ```python
 example.module_with_functions.better_function(var1, var2, long_var_name=None, *args)
@@ -149,7 +149,7 @@ use the function.
 >>> print(b)
 [10,11,12]
 ```
-</details><h2 id="example.module_with_functions.deprecated_function">deprecated_function</h2>
+</details><h3 id="example.module_with_functions.deprecated_function">deprecated_function</h3>
 
 ```python
 example.module_with_functions.deprecated_function(var1, var2, long_var_name=None, *args)
