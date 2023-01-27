@@ -1,4 +1,9 @@
-<h1 align="center">Tinydocs</h1>
+<h1 align="center">
+  <img src="assets/logo_white.png#gh-light-mode-only"  width="300">
+  <img src="assets/logo_dark.png#gh-dark-mode-only"  width="300">
+  <p>Tinydocs</p>
+</h1>
+
 <p align="center">
 Lightweight autodoc for github.
 </p>
@@ -8,6 +13,9 @@ Are you in need of a simple and efficient solution for documenting your Python c
 <h3 align="center">Tinydocs is right for you!</h3>
 
 `readthedocs` automatically generates the documentation of your `.py` files in a small elegant way that fits in a simple `README.md`. Check out the example function below or the [example directory.](#https://github.com/antonio-leitao/tinydocs/tree/master/example)
+
+[![Downloads](https://pepy.tech/badge/jet-test)](https://pepy.tech/project/tinydocs)
+[![PyPI version](https://badge.fury.io/py/jet-test.svg)](https://pypi.org/project/tinydocs/)
 
 #### Contents
 
