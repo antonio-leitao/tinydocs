@@ -157,16 +157,10 @@ examples.module_with_functions.deprecated_function(var1, var2, long_var_name=Non
 
 This function is deprecated.
 Several sentences providing an extended description. Refer to
-variables using back-ticks, e.g. `var`.
-Notes about the implementation algorithm (if needed).
+variables using back-ticks, e.g. `var`. 
+Look at this really big equation that I took from [^4]
 
-This can have multiple paragraphs.
-
-You may include some math:
-
-$$X(e^{j\omega } ) = x(n)e^{ - j\omega n}$$
-
-And even use a Greek symbol like $\omega$ inline.<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
+$$\left( \sum_{k=1}^n a_k b_k ight)^2 \leq \left( \sum_{k=1}^n a_k^2 ight) \left( \sum_{k=1}^n b_k^2 ight)$$<details closed><summary>&emsp;<b>Parameters</b></summary><p/><ul><li><code>var1</code>: array_like<br>&emsp;Array_like means all those objects -- lists, nested lists, etc. --
 that can be converted to an array.  We can also refer to
 variables like `var1`.</li><li><code>var2</code>: int<br>&emsp;The type above can either refer to an actual Python type
 (e.g. ``int``), or describe the type of the variable in more
@@ -182,8 +176,4 @@ use the function.
 ```
 
 
-[^4]: O. McNoleg, "The integration of GIS, remote sensing,
-   expert systems and adaptive co-kriging for environmental habitat
-   modelling of the Highland Haggis using object-oriented, fuzzy-logic
-   and neural-network techniques," Computers & Geosciences, vol. 22,
-   pp. 585-588, 1996.
+[^4]: Trager, Scott. "The Earth's atmosphere: seeing, background, absorption & scattering" (PDF). S.C. Trager. Retrieved 31 May 2022

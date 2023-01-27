@@ -10,7 +10,7 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
     """This function is deprecated.
 
     Several sentences providing an extended description. Refer to
-    variables using back-ticks, e.g. `var`.
+    variables using back-ticks, e.g. `var`. 
 
     Parameters
     ----------
@@ -34,15 +34,9 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
 
     Notes
     -----
-    Notes about the implementation algorithm (if needed).
+    Look at this really big equation that I took from [1]_
 
-    This can have multiple paragraphs.
-
-    You may include some math:
-
-    $$X(e^{j\omega } ) = x(n)e^{ - j\omega n}$$
-
-    And even use a Greek symbol like $\omega$ inline.
+    $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
     Warnings
     --------
@@ -50,11 +44,7 @@ def deprecated_function(var1, var2, long_var_name=None, *args):
 
     References
     ----------
-    .. [1] O. McNoleg, "The integration of GIS, remote sensing,
-       expert systems and adaptive co-kriging for environmental habitat
-       modelling of the Highland Haggis using object-oriented, fuzzy-logic
-       and neural-network techniques," Computers & Geosciences, vol. 22,
-       pp. 585-588, 1996.
+    .. [1] Trager, Scott. "The Earth's atmosphere: seeing, background, absorption & scattering" (PDF). S.C. Trager. Retrieved 31 May 2022
 
     Examples
     --------
