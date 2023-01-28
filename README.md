@@ -14,8 +14,8 @@ Are you in need of a simple and efficient solution for documenting your Python c
 
 `readthedocs` automatically generates the documentation of your `.py` files in a small elegant way that fits in a simple `README.md`. Check out the example function below or the [example directory.](#https://github.com/antonio-leitao/tinydocs/tree/master/example)
 
-[![Downloads](https://pepy.tech/badge/jet-test)](https://pepy.tech/project/tinydocs)
-[![PyPI version](https://badge.fury.io/py/jet-test.svg)](https://pypi.org/project/tinydocs/)
+[![Downloads](https://pepy.tech/badge/tinydocs)](https://pepy.tech/project/tinydocs)
+[![PyPI version](https://badge.fury.io/py/tinydocs.svg)](https://pypi.org/project/tinydocs/)
 
 #### Contents
 
@@ -35,9 +35,9 @@ pip install tinydocs
 
 # Example
 
-The following is an example of the documentation egenrated for a simple function. YOu can finde how `tinydocs` handles and entire directory by checking the [example directory](#https://github.com/antonio-leitao/tinydocs/tree/master/example).
+The following is the documentation generated for an example function. You can find how `tinydocs` handles and entire directory by checking the [example directory](#https://github.com/antonio-leitao/tinydocs/tree/master/example).
 
-## Function
+### Function
 
 ```python
 module.function(var1, var2, long_var_name=None, *args)
@@ -113,11 +113,13 @@ def function(var1, var2, long_var_name=None, *args):
 
     Warnings
     --------
-    Deprecation Warning: `deprecated_function` will be removed in version 2.0.0, it is replaced by `better_function` because the new one is blazingly fast.
+    Deprecation Warning: `deprecated_function` will be removed in version 2.0.0, it is
+     replaced by `better_function` because the new one is blazingly fast.
 
     References
     ----------
-    .. [1] Trager, Scott. "The Earth's atmosphere: seeing, background, absorption & scattering" (PDF). S.C. Trager. Retrieved 31 May 2022
+    .. [1] Trager, Scott. "The Earth's atmosphere: seeing, background, absorption &
+    scattering" (PDF). S.C. Trager. Retrieved 31 May 2022
 
     Examples
     --------
@@ -140,7 +142,7 @@ def function(var1, var2, long_var_name=None, *args):
 tinydocs <options>
 ```
 
-> **Note** By design `--tinydocs` only looks at `.py` files and skips over hidden directories adn will ignore any opbject (files, functions or methods) that start with `_`(underscore).
+> **Note** By design `--tinydocs` only looks at `.py` files and skips over hidden directories and will ignore any opbject (files, functions or methods) that start with `_`(underscore).
 
 - `--dir`: Directory to document. Defaults to working directory.
 - `--output`: Output path and name of documentation file. Defaults to `--dir/TINYDOCS.md` when not supplied.
